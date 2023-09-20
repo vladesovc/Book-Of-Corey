@@ -51,7 +51,7 @@ nav ul {
 
 .hero p {
     color: black;
-    background-color: rgb(1, 185, 130); 
+    background-color: rgb(1, 185, 130);
     padding: 8px;
     font-weight: bold;
 }
@@ -74,6 +74,7 @@ nav ul {
 
 .summary li {
     padding: 15px;
+    font-weight: 600;
 }
 
 .projects {
@@ -98,21 +99,20 @@ nav ul {
     flex-direction: column;
     width: 200px;
     text-align: center;
-  }
-  
-  .image-box img {
+}
+
+.image-box img {
     width: 100%;
     height: auto;
-  }
-  
-  .image-box h3 {
-    margin-top: 10px;
-  }
+}
 
-  .information {
+.image-box h3 {
+    margin-top: 10px;
+}
+
+.information {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     height: 150px;
     padding: 15px;
@@ -128,7 +128,7 @@ nav ul {
     justify-content: end;
 }
 
-.contactInfo ul {
+.information nav {
     display: flex;
     flex-direction: row;
     min-width: 225px;
@@ -142,7 +142,6 @@ nav ul {
     justify-content: space-between;
     padding: 35px;
 }
-
 
 /* .image-box-uno {
     display: flex;
@@ -169,35 +168,62 @@ nav ul {
         display: flex;
         flex-direction: column;
     }
-    .moreInfo a{
+
+    .moreInfo a {
         display: flex;
         flex-direction: row;
-        color: black; 
+        color: black;
     }
+
     .moreInfo a:hover {
         color: white;
         background-color: rgb(1, 185, 130);
         transition: ease-in 0.6s;
     }
+
     .summary {
         display: flex;
         flex-direction: column;
     }
-}   
+
+    .image-box-uno {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .image-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .navbar {
         display: flex;
         flex-direction: column;
     }
-    .moreInfo a{
+
+    .moreInfo a {
         display: flex;
         flex-direction: row;
-        color: black; 
+        color: black;
     }
+
     .moreInfo a:hover {
         color: white;
         background-color: rgb(1, 185, 130);
         transition: ease-in 0.6s;
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
     }
 }
